@@ -534,6 +534,13 @@ footer .footer-bottom ul.list .sub-list li:nth-child(1) {
     width: 90%;
     text-align: center;
   }
+  .about-section .about-bottom .play-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .about-section .about-bottom .play-icon i {
+    font-size: 13px;
+  }
   .pages-section {
     padding: 0 10%;
   }
@@ -567,16 +574,55 @@ footer .footer-bottom ul.list .sub-list li:nth-child(1) {
   footer .footer-bottom ul.list .sub-list li {
     margin-bottom: 1rem;
   }
+
+  @keyframes wave {
+    0% {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 1;
+    }
+    100% {
+      top: -50px;
+      right: -50px;
+      bottom: -50px;
+      left: -50px;
+      opacity: 0;
+    }
+  }
 }
 @media only screen and (max-width: 425px) {
   html {
-    font-size: 60%;
+    font-size: 70%;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
+  .hero-section .hero-left,
+  .hero-section .hero-right {
+    width: 100%;
+  }
+  .hero-section .hero-right h1 {
+    font-size: 4rem;
   }
   .about-section .about-bottom .play-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   .about-section .about-bottom .play-icon i {
-    font-size: 14px;
+    font-size: 10px;
+  }
+  .pages-section .heading {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .hero-section .hero-right h1 {
+    font-size: 3.3rem;
   }
 }
